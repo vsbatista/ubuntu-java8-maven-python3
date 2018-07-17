@@ -5,4 +5,5 @@ MAINTAINER Vinicius Soares Batista <vbatista@gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 ENV LANG=en_US.UTF-8
 
-RUN apt-get update && apt-get install -q -y openjdk-8-jdk python3-pip maven
+RUN apt-get update && apt-get install -q -y openjdk-8-jdk python3-pip maven ruby ruby-dev rubygems build-essential
+RUN gem install --no-ri --no-rdoc fpm
